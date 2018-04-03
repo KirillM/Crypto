@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 #import <CocoaLumberjack/CocoaLumberjack.h>
+#import "Reachability.h"
+#import "NSString+Crypto.h"
+#import "ABTopAlertView.h"
 
 @interface AppDelegate ()
 
@@ -18,6 +21,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    Reachability *reach = [Reachability reachabilityWithHostname:@"www.google.com"];
+    reach.reachableBlock = ^(Reachability *reach) {};
+    reach.unreachableBlock = ^(Reachability *reach) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+             [[ABTopAlertView shared] showError:@"Проверьте интернет соединение".localized];
+        });
+    };
+    [reach startNotifier];
+    
     return YES;
 }
 

@@ -10,10 +10,12 @@
 #import <PromiseKit/PromiseKit.h>
 #import "NetworkServiceProtocol.h"
 #import "NetworkService.h"
+#import "NSError+Crypto.h"
 
 @interface ViewController ()
 
 @property (nonatomic, strong) id <NetworkServiceProtocol> networkService;
+@property (atomic, strong) NSArray *exchangeRates;
 
 @end
 
@@ -34,11 +36,11 @@
 }
 
 - (void)getExchangeRates{
-    [self.networkService cryptoExchanges].then(^(NSArray *subways){
-       // [self.output didFindSubways:subways];
+    __weak typeof(self) weakSelf = self;
+    [self.networkService cryptoExchanges].then(^(NSArray *exchangeRates){
+        weakSelf.exchangeRates = exchangeRates;
     }).catch (^(NSError *error) {
-       // [error log:NSStringFromClass(self.class) method:NSStringFromSelector(_cmd)];
-       // [self.output didFindSubwaysFailedWithError:error];
+        [error log:NSStringFromClass(self.class) method:NSStringFromSelector(_cmd)];
     });
 }
 

@@ -15,8 +15,6 @@
 
 + (FEMMapping *)exchangeMapping {
     FEMMapping *mapping = [[FEMMapping alloc] initWithObjectClass:NSClassFromString(@"CurrencyObject")];
-    
-   // [mapping addAttributesFromArray:@[@"title", @"rating", @"icon"]];
     [mapping addAttributesFromDictionary:@{
                                            @"delay": @"15m",
                                            @"buy" : @"buy",

@@ -12,5 +12,6 @@ pod 'CocoaLumberjack'
 pod 'Reachability'
 pod 'PromiseKit', '~> 4.0'
 pod 'FastEasyMapping', '~> 1.0'
+pod 'FrameAccessor', '~> 2.0'
 
 end

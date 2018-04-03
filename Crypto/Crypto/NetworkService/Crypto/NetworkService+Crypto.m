@@ -17,12 +17,10 @@
     [self applyJsonSerializer];
     return [self cancellableGET].then(^(NSDictionary *exchanges) {
         return [self.objectDeserializer currenciesExchangeRatesFromDictionary:exchanges].catch(^(NSError *error) {
-      //      [error log:NSStringFromClass(self.class) method:NSStringFromSelector(_cmd)];
-           // return [self didFailWithError:error];
+            [error log:NSStringFromClass(self.class) method:NSStringFromSelector(_cmd)];
         });
     }).catch(^(NSError *error) {
         [error log:NSStringFromClass(self.class) method:NSStringFromSelector(_cmd)];
-        //return [self didFailWithError:error];
     });
 }
 

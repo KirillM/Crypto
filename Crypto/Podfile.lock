@@ -21,6 +21,7 @@ PODS:
   - CocoaLumberjack/Extensions (3.4.1):
     - CocoaLumberjack/Default
   - FastEasyMapping (1.2.2)
+  - FrameAccessor (2.0)
   - PromiseKit (4.5.2):
     - PromiseKit/Foundation (= 4.5.2)
     - PromiseKit/QuartzCore (= 4.5.2)
@@ -38,6 +39,7 @@ DEPENDENCIES:
   - AFNetworking
   - CocoaLumberjack
   - FastEasyMapping (~> 1.0)
+  - FrameAccessor (~> 2.0)
   - PromiseKit (~> 4.0)
   - Reachability
 
@@ -45,9 +47,10 @@ SPEC CHECKSUMS:
   AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
   CocoaLumberjack: 2e258a064cacc8eb9a2aca318e24d02a0a7fd56d
   FastEasyMapping: cc13aa6608aeb171bc0ea895876434a7328a153a
+  FrameAccessor: 443a13e58e23a10ff22180da0897b28c3f6abf66
   PromiseKit: 743e497a5f505a470d3bbbf4ce0663c1268af0a4
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
 
-PODFILE CHECKSUM: e5a3f775580bcb9b6900be92365e05873149d2a2
+PODFILE CHECKSUM: 0768af459b608e222dcb0dc7ae3a1d5419043f59
 
 COCOAPODS: 1.4.0

@@ -19,8 +19,6 @@ typedef NS_ENUM (NSUInteger, ErrorTypeCode) {
     ErrorTypeCodeInternal   = 2
 };
 
-/** Код ответа серверной ошибки */
-
 typedef NS_ENUM (NSUInteger, ErrorTypeServerResponseCode) {
     ErrorTypeServerResponseCodeWrongRequest   = 400,
     ErrorTypeServerResponseCodeTimeExpired    = 403,
