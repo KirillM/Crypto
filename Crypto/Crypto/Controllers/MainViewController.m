@@ -14,6 +14,7 @@
 #import "AddCurrencyViewController.h"
 #import "MainCurrencyTableViewCell.h"
 #import "CurrencyObject.h"
+#import "ABTopAlertView.h"
 
 static NSString *const kAddCurrencyViewControllerSegue = @"kAddCurrencyViewControllerSegue";
 static NSString *kUserDefaultsExchangeRatesKey = @"UserDefaultsExchangeRates";
@@ -64,6 +65,7 @@ static NSString *kUserDefaultsExchangeRatesKey = @"UserDefaultsExchangeRates";
         weakSelf.amountBTCTextField.text = [NSString stringWithFormat:@"%f", [self calculate]];
     }).catch (^(NSError *error) {
         [error log:NSStringFromClass(self.class) method:NSStringFromSelector(_cmd)];
+        [[ABTopAlertView shared] showError:error.localizedDescription];
     });
 }
 
