@@ -1,5 +1,5 @@
 //
-//  NSDate+Crypto.h
+//  NetworkServiceCryptoProtocol.h
 //  Crypto
 //
 //  Created by Kirill Mezrin on 03/04/2018.
@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSDate (Crypto)
+@class AnyPromise;
+
+@protocol NetworkServiceCryptoProtocol <NSObject>
+
+- (AnyPromise *)cryptoExchanges;
 
 @end

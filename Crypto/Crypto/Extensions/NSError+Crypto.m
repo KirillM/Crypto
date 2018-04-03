@@ -11,6 +11,7 @@
 #import "AFNetworking.h"
 #import "Logger.h"
 #import "AppDelegate.h"
+#import <CocoaLumberjack/CocoaLumberjack.h>
 
 NSString *const kErrorLevelKey = @"ErrorLevelKey";
 static NSString *const kErrorBaseDomain = @"Poison";

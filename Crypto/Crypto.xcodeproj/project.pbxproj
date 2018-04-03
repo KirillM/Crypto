@@ -16,10 +16,12 @@
 		53CBB1482072E87D007D363B /* ObjectDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CBB1472072E87D007D363B /* ObjectDeserializer.m */; };
 		53CBB14D2072E9D0007D363B /* LogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CBB14C2072E9D0007D363B /* LogFormatter.m */; };
 		53CBB1502072E9DF007D363B /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CBB14F2072E9DF007D363B /* Logger.m */; };
-		53CBB1542072EADA007D363B /* NSDate+Crypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CBB1532072EADA007D363B /* NSDate+Crypto.m */; };
 		53CBB1572072EB08007D363B /* NSError+Crypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CBB1562072EB08007D363B /* NSError+Crypto.m */; };
 		53CBB15A2072EB81007D363B /* NSString+Crypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CBB1592072EB81007D363B /* NSString+Crypto.m */; };
 		53CBB15E2072EE87007D363B /* NetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CBB15D2072EE87007D363B /* NetworkService.m */; };
+		53CBB163207305A8007D363B /* NetworkService+Crypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CBB162207305A8007D363B /* NetworkService+Crypto.m */; };
+		53CBB16820731155007D363B /* Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CBB16720731155007D363B /* Mapping.m */; };
+		53CBB16B2073132D007D363B /* CurrencyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CBB16A2073132D007D363B /* CurrencyObject.m */; };
 		7857D47E23A049793E6868A5 /* Pods_Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E657DEFE2F95A340D32EFB5F /* Pods_Crypto.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,8 +45,6 @@
 		53CBB14C2072E9D0007D363B /* LogFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogFormatter.m; sourceTree = "<group>"; };
 		53CBB14E2072E9DF007D363B /* Logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
 		53CBB14F2072E9DF007D363B /* Logger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
-		53CBB1522072EADA007D363B /* NSDate+Crypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+Crypto.h"; sourceTree = "<group>"; };
-		53CBB1532072EADA007D363B /* NSDate+Crypto.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Crypto.m"; sourceTree = "<group>"; };
 		53CBB1552072EB08007D363B /* NSError+Crypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSError+Crypto.h"; sourceTree = "<group>"; };
 		53CBB1562072EB08007D363B /* NSError+Crypto.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSError+Crypto.m"; sourceTree = "<group>"; };
 		53CBB1582072EB81007D363B /* NSString+Crypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Crypto.h"; sourceTree = "<group>"; };
@@ -52,6 +52,13 @@
 		53CBB15C2072EE87007D363B /* NetworkService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkService.h; sourceTree = "<group>"; };
 		53CBB15D2072EE87007D363B /* NetworkService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkService.m; sourceTree = "<group>"; };
 		53CBB15F2072EEB4007D363B /* NetworkServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkServiceProtocol.h; sourceTree = "<group>"; };
+		53CBB161207305A8007D363B /* NetworkService+Crypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NetworkService+Crypto.h"; sourceTree = "<group>"; };
+		53CBB162207305A8007D363B /* NetworkService+Crypto.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NetworkService+Crypto.m"; sourceTree = "<group>"; };
+		53CBB164207305D6007D363B /* NetworkServiceCryptoProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkServiceCryptoProtocol.h; sourceTree = "<group>"; };
+		53CBB16620731155007D363B /* Mapping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mapping.h; sourceTree = "<group>"; };
+		53CBB16720731155007D363B /* Mapping.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mapping.m; sourceTree = "<group>"; };
+		53CBB1692073132D007D363B /* CurrencyObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurrencyObject.h; sourceTree = "<group>"; };
+		53CBB16A2073132D007D363B /* CurrencyObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurrencyObject.m; sourceTree = "<group>"; };
 		E657DEFE2F95A340D32EFB5F /* Pods_Crypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -88,6 +95,7 @@
 		53817E85206FB91800D5D4FE /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
+				53CBB1652073113B007D363B /* Mapping */,
 				53CBB15B2072EE5B007D363B /* NetworkService */,
 				53CBB1512072EAB5007D363B /* Extensions */,
 				53CBB14A2072E9B4007D363B /* Logger */,
@@ -129,8 +137,6 @@
 		53CBB1512072EAB5007D363B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				53CBB1522072EADA007D363B /* NSDate+Crypto.h */,
-				53CBB1532072EADA007D363B /* NSDate+Crypto.m */,
 				53CBB1552072EB08007D363B /* NSError+Crypto.h */,
 				53CBB1562072EB08007D363B /* NSError+Crypto.m */,
 				53CBB1582072EB81007D363B /* NSString+Crypto.h */,
@@ -142,7 +148,7 @@
 		53CBB15B2072EE5B007D363B /* NetworkService */ = {
 			isa = PBXGroup;
 			children = (
-				53CBB1602072EEC6007D363B /* Error */,
+				53CBB1602072EEC6007D363B /* Crypto */,
 				53CBB15C2072EE87007D363B /* NetworkService.h */,
 				53CBB15D2072EE87007D363B /* NetworkService.m */,
 				53CBB15F2072EEB4007D363B /* NetworkServiceProtocol.h */,
@@ -150,11 +156,25 @@
 			path = NetworkService;
 			sourceTree = "<group>";
 		};
-		53CBB1602072EEC6007D363B /* Error */ = {
+		53CBB1602072EEC6007D363B /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
+				53CBB161207305A8007D363B /* NetworkService+Crypto.h */,
+				53CBB162207305A8007D363B /* NetworkService+Crypto.m */,
+				53CBB164207305D6007D363B /* NetworkServiceCryptoProtocol.h */,
 			);
-			path = Error;
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		53CBB1652073113B007D363B /* Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				53CBB16620731155007D363B /* Mapping.h */,
+				53CBB16720731155007D363B /* Mapping.m */,
+				53CBB1692073132D007D363B /* CurrencyObject.h */,
+				53CBB16A2073132D007D363B /* CurrencyObject.m */,
+			);
+			path = Mapping;
 			sourceTree = "<group>";
 		};
 		7B4A11D01CBC1FF312333582 /* Frameworks */ = {
@@ -315,11 +335,13 @@
 				53CBB1502072E9DF007D363B /* Logger.m in Sources */,
 				53CBB1572072EB08007D363B /* NSError+Crypto.m in Sources */,
 				53CBB15E2072EE87007D363B /* NetworkService.m in Sources */,
+				53CBB16B2073132D007D363B /* CurrencyObject.m in Sources */,
 				53CBB1482072E87D007D363B /* ObjectDeserializer.m in Sources */,
 				53CBB14D2072E9D0007D363B /* LogFormatter.m in Sources */,
+				53CBB16820731155007D363B /* Mapping.m in Sources */,
 				53817E96206FB91800D5D4FE /* main.m in Sources */,
 				53817E88206FB91800D5D4FE /* AppDelegate.m in Sources */,
-				53CBB1542072EADA007D363B /* NSDate+Crypto.m in Sources */,
+				53CBB163207305A8007D363B /* NetworkService+Crypto.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

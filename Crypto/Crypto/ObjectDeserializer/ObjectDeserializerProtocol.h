@@ -7,18 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <PromiseKit/PromiseKit.h>
 
 @protocol ObjectDeserializerProtocol <NSObject>
 
-
-/* Plain */
-
-- (AnyPromise *)plainPhotoWithReviewFromDictionary:(NSDictionary *)dict;
-- (AnyPromise *)plainGeoPointFromResponse:(GMSReverseGeocodeResponse *)reverseGeocodeResponse;
-- (AnyPromise *)plainGeoPointsFromGeocodeResponse:(NSDictionary *)geocodeResponce;
-- (AnyPromise *)plainGeoPointsFromGooglePlacesResponse:(NSArray<GMSPlace *> *)response;
-
-/* */
-- (AnyPromise *)placeDraftIdxFromDictionary:(NSDictionary *)dict;
+- (AnyPromise *)currenciesExchangeRatesFromDictionary:(NSDictionary *)dict;
 
 @end

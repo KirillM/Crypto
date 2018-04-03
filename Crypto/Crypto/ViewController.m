@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+#import <PromiseKit/PromiseKit.h>
+#import "NetworkServiceProtocol.h"
+#import "NetworkService.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) id <NetworkServiceProtocol> networkService;
 
 @end
 
@@ -16,7 +21,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.networkService = (id <NetworkServiceProtocol>)[[NetworkService alloc] init];
+    [self getExchangeRates];
     // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 
@@ -25,5 +33,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)getExchangeRates{
+    [self.networkService cryptoExchanges].then(^(NSArray *subways){
+       // [self.output didFindSubways:subways];
+    }).catch (^(NSError *error) {
+       // [error log:NSStringFromClass(self.class) method:NSStringFromSelector(_cmd)];
+       // [self.output didFindSubwaysFailedWithError:error];
+    });
+}
 
 @end

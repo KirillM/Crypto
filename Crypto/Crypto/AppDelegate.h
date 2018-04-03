@@ -7,6 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CocoaLumberjack/CocoaLumberjack.h>
+
+#define LOG_LEVEL_DEF ddLogLevel
+#ifdef DEBUG
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+#else
+static const DDLogLevel ddLogLevel = DDLogLevelWarning;
+#endif
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

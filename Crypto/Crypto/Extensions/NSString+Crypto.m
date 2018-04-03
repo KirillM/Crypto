@@ -14,9 +14,4 @@
     return NSLocalizedString(self, nil);
 }
 
-+ (NSString *)priceCategoryString:(NSInteger)priceCategory {
-    NSString *priceCategoryString = [[NSString string] stringByPaddingToLength:(priceCategory) withString: @"₽".localized startingAtIndex: 0];
-    return priceCategoryString;
-}
-
 @end

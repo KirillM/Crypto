@@ -7,7 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AFNetworking.h"
+#import "NetworkServiceProtocol.h"
+#import "ObjectDeserializerProtocol.h"
 
-@interface NetworkService : NSObject
+@interface NetworkService : AFHTTPSessionManager <NSObject>
+
+@property (strong, nonatomic, nullable) id<ObjectDeserializerProtocol> objectDeserializer;
+
+- (AnyPromise * _Nonnull)cancellableGET;
+
+- (void)applyJsonSerializer;
+- (void)setSerializerToDefault;
 
 @end

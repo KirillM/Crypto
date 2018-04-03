@@ -1,5 +1,5 @@
 //
-//  NSString+Crypto.h
+//  Mapping.h
 //  Crypto
 //
 //  Created by Kirill Mezrin on 03/04/2018.
@@ -7,9 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <FastEasyMapping/FastEasyMapping.h>
 
-@interface NSString (Crypto)
+@interface Mapping : NSObject
 
-- (NSString *)localized;
++ (FEMMapping *)exchangeMapping;
 
 @end
