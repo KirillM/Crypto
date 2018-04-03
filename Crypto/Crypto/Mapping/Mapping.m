@@ -20,7 +20,8 @@
                                            @"buy" : @"buy",
                                            @"last" : @"last",
                                            @"sell" : @"sell",
-                                           @"symbol" : @"symbol"
+                                           @"symbol" : @"symbol",
+                                           @"name"  : @"name"
                                            }];
     return mapping;
 }

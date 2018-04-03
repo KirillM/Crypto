@@ -15,6 +15,7 @@
 @property (nonatomic, copy) NSNumber *last;
 @property (nonatomic, copy) NSNumber *sell;
 @property (nonatomic, copy) NSString *symbol;
-@property (nonatomic, assign) BOOL *selected;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, assign) BOOL selected;
 
 @end

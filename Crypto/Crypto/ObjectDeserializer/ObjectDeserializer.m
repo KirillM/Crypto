@@ -17,11 +17,18 @@
 - (AnyPromise *)currenciesExchangeRatesFromDictionary:(NSDictionary *)dict {
     return [AnyPromise promiseWithResolverBlock:^(PMKResolver  _Nonnull resolve) {
         NSMutableArray <CurrencyObject *> *exchangeRates = [NSMutableArray <CurrencyObject *> new];
-        [dict enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, NSDictionary *  _Nonnull exchangeInfo, BOOL * _Nonnull stop) {
-            [exchangeRates addObject:[FEMDeserializer objectFromRepresentation:exchangeInfo
+        [dict enumerateKeysAndObjectsUsingBlock:^(NSString *  _Nonnull key, NSDictionary *  _Nonnull exchangeInfo, BOOL * _Nonnull stop) {
+            NSMutableDictionary *exchangeInfoWithName = [NSMutableDictionary dictionaryWithDictionary:exchangeInfo];
+            [exchangeInfoWithName setObject:key forKey:@"name"];
+            [exchangeRates addObject:[FEMDeserializer objectFromRepresentation:exchangeInfoWithName
                                                                        mapping:[Mapping exchangeMapping]]];
         }];
-        resolve(exchangeRates);
+        if (exchangeRates.count) {
+            resolve(exchangeRates);
+        } else {
+            NSError *error = [NSError errorWithDescription:nil underlyingError:nil errorTypeCode:ErrorTypeCodeInternal errorLevel:DDLogLevelError];
+            resolve(error);
+        }
     }];
 }
 

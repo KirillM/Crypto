@@ -57,7 +57,6 @@ typedef NS_ENUM (NSUInteger, GETCancellableTaskType) {
             [self decrementNetworkActivityCounter];
             [self.requestSerializer clearAuthorizationHeader];
             
-           // [self updateLoadTaskType:taskType withValue:nil];
             self.loadCrypto = nil;
             DDLogVerbose(@"%@", [Logger info:[NSString stringWithFormat:@"Response: %@", task.response.URL.absoluteString] class:NSStringFromClass(self.class) method:NSStringFromSelector(_cmd)]);
             DDLogDebug(@"%@", [Logger info:[NSString stringWithFormat:@"Response Headers: %@", ((NSHTTPURLResponse *)task.response).allHeaderFields] class:NSStringFromClass(self.class) method:NSStringFromSelector(_cmd)]);

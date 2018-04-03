@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		53817E88206FB91800D5D4FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53817E87206FB91800D5D4FE /* AppDelegate.m */; };
-		53817E8B206FB91800D5D4FE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53817E8A206FB91800D5D4FE /* ViewController.m */; };
+		53817E8B206FB91800D5D4FE /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53817E8A206FB91800D5D4FE /* MainViewController.m */; };
 		53817E8E206FB91800D5D4FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53817E8C206FB91800D5D4FE /* Main.storyboard */; };
 		53817E90206FB91800D5D4FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53817E8F206FB91800D5D4FE /* Assets.xcassets */; };
 		53817E93206FB91800D5D4FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53817E91206FB91800D5D4FE /* LaunchScreen.storyboard */; };
@@ -23,6 +23,9 @@
 		53CBB16820731155007D363B /* Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CBB16720731155007D363B /* Mapping.m */; };
 		53CBB16B2073132D007D363B /* CurrencyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CBB16A2073132D007D363B /* CurrencyObject.m */; };
 		53CBB16F2073219E007D363B /* ABTopAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CBB16E2073219E007D363B /* ABTopAlertView.m */; };
+		53CBB17520733247007D363B /* AddCurrencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CBB17420733247007D363B /* AddCurrencyViewController.m */; };
+		53CBB179207334F9007D363B /* AddCurrencyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CBB178207334F9007D363B /* AddCurrencyTableViewCell.m */; };
+		53CBB17C20733C8D007D363B /* MainCurrencyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CBB17B20733C8D007D363B /* MainCurrencyTableViewCell.m */; };
 		7857D47E23A049793E6868A5 /* Pods_Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E657DEFE2F95A340D32EFB5F /* Pods_Crypto.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,8 +35,8 @@
 		53817E83206FB91800D5D4FE /* Crypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53817E86206FB91800D5D4FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		53817E87206FB91800D5D4FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		53817E89206FB91800D5D4FE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		53817E8A206FB91800D5D4FE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		53817E89206FB91800D5D4FE /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		53817E8A206FB91800D5D4FE /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		53817E8D206FB91800D5D4FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		53817E8F206FB91800D5D4FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53817E92206FB91800D5D4FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +66,12 @@
 		53CBB16D2073219E007D363B /* ABTopAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABTopAlertView.h; sourceTree = "<group>"; };
 		53CBB16E2073219E007D363B /* ABTopAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABTopAlertView.m; sourceTree = "<group>"; };
 		53CBB17020732319007D363B /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		53CBB17320733247007D363B /* AddCurrencyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddCurrencyViewController.h; sourceTree = "<group>"; };
+		53CBB17420733247007D363B /* AddCurrencyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddCurrencyViewController.m; sourceTree = "<group>"; };
+		53CBB177207334F9007D363B /* AddCurrencyTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddCurrencyTableViewCell.h; sourceTree = "<group>"; };
+		53CBB178207334F9007D363B /* AddCurrencyTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddCurrencyTableViewCell.m; sourceTree = "<group>"; };
+		53CBB17A20733C8D007D363B /* MainCurrencyTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainCurrencyTableViewCell.h; sourceTree = "<group>"; };
+		53CBB17B20733C8D007D363B /* MainCurrencyTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainCurrencyTableViewCell.m; sourceTree = "<group>"; };
 		E657DEFE2F95A340D32EFB5F /* Pods_Crypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -99,6 +108,7 @@
 		53817E85206FB91800D5D4FE /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
+				53CBB1722073272C007D363B /* Controllers */,
 				53CBB16C20732188007D363B /* ABTopAlertView */,
 				53CBB1652073113B007D363B /* Mapping */,
 				53CBB15B2072EE5B007D363B /* NetworkService */,
@@ -107,8 +117,6 @@
 				53CBB1452072E866007D363B /* ObjectDeserializer */,
 				53817E86206FB91800D5D4FE /* AppDelegate.h */,
 				53817E87206FB91800D5D4FE /* AppDelegate.m */,
-				53817E89206FB91800D5D4FE /* ViewController.h */,
-				53817E8A206FB91800D5D4FE /* ViewController.m */,
 				53817E8C206FB91800D5D4FE /* Main.storyboard */,
 				53817E8F206FB91800D5D4FE /* Assets.xcassets */,
 				53817E91206FB91800D5D4FE /* LaunchScreen.storyboard */,
@@ -189,6 +197,29 @@
 				53CBB16E2073219E007D363B /* ABTopAlertView.m */,
 			);
 			path = ABTopAlertView;
+			sourceTree = "<group>";
+		};
+		53CBB1722073272C007D363B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				53CBB1762073349F007D363B /* Cells */,
+				53817E89206FB91800D5D4FE /* MainViewController.h */,
+				53817E8A206FB91800D5D4FE /* MainViewController.m */,
+				53CBB17320733247007D363B /* AddCurrencyViewController.h */,
+				53CBB17420733247007D363B /* AddCurrencyViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		53CBB1762073349F007D363B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				53CBB177207334F9007D363B /* AddCurrencyTableViewCell.h */,
+				53CBB178207334F9007D363B /* AddCurrencyTableViewCell.m */,
+				53CBB17A20733C8D007D363B /* MainCurrencyTableViewCell.h */,
+				53CBB17B20733C8D007D363B /* MainCurrencyTableViewCell.m */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		7B4A11D01CBC1FF312333582 /* Frameworks */ = {
@@ -347,7 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53817E8B206FB91800D5D4FE /* ViewController.m in Sources */,
+				53817E8B206FB91800D5D4FE /* MainViewController.m in Sources */,
 				53CBB15A2072EB81007D363B /* NSString+Crypto.m in Sources */,
 				53CBB1502072E9DF007D363B /* Logger.m in Sources */,
 				53CBB1572072EB08007D363B /* NSError+Crypto.m in Sources */,
@@ -356,10 +387,13 @@
 				53CBB1482072E87D007D363B /* ObjectDeserializer.m in Sources */,
 				53CBB14D2072E9D0007D363B /* LogFormatter.m in Sources */,
 				53CBB16F2073219E007D363B /* ABTopAlertView.m in Sources */,
+				53CBB17C20733C8D007D363B /* MainCurrencyTableViewCell.m in Sources */,
 				53CBB16820731155007D363B /* Mapping.m in Sources */,
 				53817E96206FB91800D5D4FE /* main.m in Sources */,
 				53817E88206FB91800D5D4FE /* AppDelegate.m in Sources */,
 				53CBB163207305A8007D363B /* NetworkService+Crypto.m in Sources */,
+				53CBB179207334F9007D363B /* AddCurrencyTableViewCell.m in Sources */,
+				53CBB17520733247007D363B /* AddCurrencyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

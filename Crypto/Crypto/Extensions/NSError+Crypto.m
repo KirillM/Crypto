@@ -86,7 +86,7 @@ static NSString *const ErrorWarning = @"Warning";
             description = @"Произошла ошибка загрузки данных, попробуйте обновить экран позже".localized;
             break;
         case ErrorTypeCodeInternal:
-            description = @"Произошла внутренняя загрузки данных, попробуйте обновить экран позже".localized;
+            description = @"Произошла внутренняя ошибка, попробуйте обновить экран позже".localized;
             break;
     }
     return description;
